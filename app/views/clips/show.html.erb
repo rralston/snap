@@ -68,7 +68,7 @@
           </div>
         </div>
         <div class='video_div span10'>
-          <iframe id="player1" src="<%= @clip.video.embed_url %>?api=1&player_id=player1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe id="player1" src="<%= @clip.video.embed_url %>?api=1&player_id=player1&title=0&byline=0&portrait=0&autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
 
@@ -110,11 +110,11 @@ $(document).ready(function(){
     
     to_show = window.speed - 1
     
-    if (to_show < 15){
+    if (to_show < 18){
       speed_div.addClass('orange');
     }
 
-    if(to_show <= 5){
+    if(to_show <= 10){
       speed_div.addClass('red').removeClass('orange');
     }
     
