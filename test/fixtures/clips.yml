@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  speed: MyString
+  date_string: MyString
+  time: MyString
+  location: MyString
+  video_url: MyString
+
+two:
+  speed: MyString
+  date_string: MyString
+  time: MyString
+  location: MyString
+  video_url: MyString

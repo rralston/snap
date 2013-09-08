@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Speed:</b>
+  <%= @clip.speed %>
+</p>
+
+<p>
+  <b>Date string:</b>
+  <%= @clip.date_string %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @clip.time %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @clip.location %>
+</p>
+
+<p>
+  <b>Video url:</b>
+  <%= @clip.video_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_clip_path(@clip) %> |
+<%= link_to 'Back', clips_path %>
