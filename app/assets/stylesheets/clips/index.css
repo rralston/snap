@@ -185,10 +185,16 @@
 
 .share_btn.box.loading{
   background: url('/assets/box-loading.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
 }
 
 .share_btn.box.loading.done{
   background: url('/assets/box-done.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
 }
 
 .share_btn.tube{
