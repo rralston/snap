@@ -1,4 +1,5 @@
 #splash
   #content
-    = text_field_tag "email"
-    = button_tag "REQUEST"
+    %form.invitation_request
+      = text_field_tag "email"
+      = button_tag "REQUEST", class: 'submit'

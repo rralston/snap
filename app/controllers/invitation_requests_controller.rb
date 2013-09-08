@@ -20,6 +20,6 @@ class InvitationRequestsController < ApplicationController
   private
 
   def invitation_request_params
-    params.require(:invitation_request).permit(:email)
+    params[:invitation_request]
   end
 end
