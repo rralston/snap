@@ -55,7 +55,9 @@ module Snap
 
     # Enable the asset pipeline
     config.assets.enabled = true
-    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
+    #Vendor fonts
+    config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
 
     #Fix for Heroku (remove when upgrade to Rails 4)
     config.assets.initialize_on_precompile = false

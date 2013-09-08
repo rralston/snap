@@ -13,3 +13,37 @@
  */
 
 
+/* Web font styles */
+
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('/assets/raleway_thin-webfont.eot');
+    src: url('/assets/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/assets/raleway_thin-webfont.woff') format('woff'),
+    url('/assets/raleway_thin-webfont.ttf') format('truetype'),
+    url('/assets/raleway_thin-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro Black";
+    src: url('/assets/941558838-DINPro-Black.eot');
+    src: url('/assets/941558838-DINPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('/assets/941558838-DINPro-Black.svg#DINPro') format('svg'),
+    url('/assets/941558838-DINPro-Black.woff') format('woff'),
+    url('/assets/941558838-DINPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DINPro Light";
+    src: url('/assets/502929688-DINPro-Light.eot');
+    src: url('/assets/502929688-DINPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('/assets/502929688-DINPro-Light.svg#DINPro') format('svg'),
+    url('/assets/502929688-DINPro-Light.woff') format('woff'),
+    url('/assets/502929688-DINPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
