@@ -47,6 +47,15 @@
   background-size: 17px;
 }
 
+#car_top{
+  position: absolute;
+  top: 60px;
+  left: 43%;
+  width: 25px;
+  height: 100px;
+  background: url("/assets/car-top.png") no-repeat;
+}
+
 .share-div a{
   color: white !important;
   margin-left: 30px
@@ -92,6 +101,10 @@
 
 .show .clip .video_div iframe{
   height: 310px !important;
+}
+
+.map_div{
+  position: relative;
 }
 
 .map_div img{
