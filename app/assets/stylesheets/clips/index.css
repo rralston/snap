@@ -57,7 +57,7 @@
 
 #car_top{
   position: absolute;
-  top: 110px;
+  top: 118px;
   left: 43%;
   width: 25px;
   height: 100px;
@@ -109,6 +109,7 @@
 
 .show .clip .video_div iframe{
   height: 310px !important;
+  width: 550px;
 }
 
 .map_div{
