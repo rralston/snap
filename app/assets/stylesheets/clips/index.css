@@ -132,6 +132,59 @@
 
 
 /*share buttons*/
+.share_head{
+  text-align: center; 
+  width: 500px;
+  font-size: 30px;
+  color: white;
+  height: 50px;
+  padding-top: 15px;
+}
 
+
+.share_btn{
+  cursor: pointer;
+}
+
+.back_btn{
+  margin-top: 25px;
+}
+
+.back_btn a, .back_btn a:hover{
+  background-color: #686c6f;
+  width: 70px;
+  padding: 15px;
+  color: white !important;
+}
+
+.share_btn.box{
+  background: url('/assets/box.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.box.loading{
+  background: url('/assets/box-loading.png') no-repeat;
+}
+
+.share_btn.box.loading.done{
+  background: url('/assets/box-done.png') no-repeat;
+}
+
+.share_btn.tube{
+  background: url('/assets/tube.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.tube.loading{
+  background: url('/assets/tube-loading.png') no-repeat;
+}
+
+.share_btn.tube.loading.done{
+  background: url('/assets/tube-done.png') no-repeat;
+}
 
 
