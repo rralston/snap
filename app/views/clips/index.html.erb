@@ -1,4 +1,4 @@
-<%= javascript_include_tag "clips/projects_manifest" %>
+
 <%= stylesheet_link_tag "clips/manifest.css" %>
 
 <div class='container-fluid'>
@@ -23,7 +23,7 @@
                   <%= clip.time %>
                 </div>
                 <div class='span12 clip_detail speed_loc'>
-                  <%= clip.speed %> mph &nbsp;&nbsp;<i class='icon-map-marker'></i> <%= clip.location %>
+                  <%= clip.speed %> mph &nbsp;&nbsp;<div class='location-marker'></div> <%= clip.location %>
                 </div>
                 <div class='span12 clip_detail'>
                   <%= link_to 'Show', clip %>
