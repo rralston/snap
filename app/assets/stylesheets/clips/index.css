@@ -3,6 +3,7 @@
 .grey{
   background-color: #686c6f;
   font-size: 10px;
+  width: 120px;
 }
 
 .clip{
@@ -20,11 +21,18 @@
 
 .sun{
   background: url("/assets/sun.png") no-repeat;
-  min-width: 10px; 
-  background-size: cover;
-  min-height: 10px;
+  min-width: 12px;
+  background-size: 100%;
+  position: relative;
+  min-height: 13px;
   display: inline-block;
+  top: 4px;
 }
+
+.light{
+  font-family: 'DINPro-Light' !important;
+}
+
 
 .speed{
   font-size: 40px;
@@ -35,12 +43,22 @@
   text-align: center;
 }
 
+.location-marker{
+  background: url("/assets/location.png") no-repeat;
+  min-width: 11px; 
+  min-height: 17px;
+  background-position: center;  
+  display: inline-block;
+  background-size: 100%;
+}
+
 .meter-icon{
   background: url("/assets/meter.png") no-repeat;
   min-width: 10px; 
   min-height: 15px;
-  margin-top: -10px;
   background-position: center;
+  margin-top: -13px;
+  background-size: 25px;
 }
 
 .share-div{
@@ -49,15 +67,15 @@
   border-bottom: 1px solid gray;
   padding-left: 0px;
   padding-top:  7px;
-  font-size: 14px;
+  font-size: 17px;
   background: url("/assets/share.png") no-repeat;
-  background-position: 10px 10px;
+  background-position: 10% 10px;
   background-size: 17px;
 }
 
 #car_top{
   position: absolute;
-  top: 110px;
+  top: 118px;
   left: 43%;
   width: 25px;
   height: 100px;
@@ -109,6 +127,7 @@
 
 .show .clip .video_div iframe{
   height: 310px !important;
+  width: 550px;
 }
 
 .map_div{
@@ -132,6 +151,65 @@
 
 
 /*share buttons*/
+.share_head{
+  text-align: center; 
+  width: 500px;
+  font-size: 30px;
+  color: white;
+  height: 40px;
+  padding-top: 25px;
+}
 
+
+.share_btn{
+  cursor: pointer;
+}
+
+.back_btn{
+  margin-top: 25px;
+}
+
+.back_btn a, .back_btn a:hover{
+  background-color: #686c6f;
+  width: 70px;
+  padding: 15px;
+  color: white !important;
+}
+
+.share_btn.box{
+  background: url('/assets/box.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.box.loading{
+  background: url('/assets/box-loading.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.box.loading.done{
+  background: url('/assets/box-done.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.tube{
+  background: url('/assets/tube.png') no-repeat;
+  height: 132px;
+  width: 570px;
+  background-size: 100%;
+}
+
+.share_btn.tube.loading{
+  background: url('/assets/tube-loading.png') no-repeat;
+}
+
+.share_btn.tube.loading.done{
+  background: url('/assets/tube-done.png') no-repeat;
+}
 
 

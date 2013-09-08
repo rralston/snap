@@ -9,24 +9,24 @@
           
           <div class='row-fluid '>
             <div class='span10 offset1'>
-              <span class='pull-left'>
+              <span class='pull-left light'>
                 <div class='sun'></div> fair
               </span>
 
-              <span class='pull-right'>
+              <span class='pull-right light'>
                 73<sup>o</sup> F
               </span>
             </div>
           </div>
           
           <div class='row-fluid'>
-            <div class='span10 offset1 date' style='margin-top: -10px;'>
+            <div class='span10 offset1 date light' style='margin-top: -10px;'>
               <%= @clip.date_string %>
             </div>
           </div>
           
           <div class='row-fluid'>
-            <div class='span10 offset1 time'>
+            <div class='span10 offset1 time light'>
               <%= @clip.time %>
             </div>
           </div>
@@ -37,7 +37,7 @@
                   35
                 </div>
                 <div class='span3 offset1 meter_div'>
-                  <div class='row-fluid'>
+                  <div class='row-fluid light'>
                     <div class='span12'>
                       mph
                     </div>
@@ -55,8 +55,8 @@
           </div>
           <div class='row-fluid share-div'>
             <a href='/clips/<%= @clip.id %>/share'>
-              <div class='span5 offset4'>
-                Share
+              <div class='span5 offset4 light'>
+                share
               </div>
             </a>
           </div>
@@ -68,19 +68,7 @@
           </div>
         </div>
         <div class='video_div span10'>
-          <iframe id="player1" src="<%= @clip.video.embed_url %>?api=1&player_id=player1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-          <div id='video_overlays'>
-            <div>
-              <span id='video_play_seconds'>23</span> Seconds
-            </div>
-            <div >
-              lat long <span id='video_lat_long'>23/23</span>
-            </div>
-            <div id='video_speed'>
-              23
-            </div>
-          </div>
+          <iframe id="player1" src="<%= @clip.video.embed_url %>?api=1&player_id=player1&title=0&byline=0&portrait=0&autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
 
@@ -95,7 +83,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   window.speed = 35;
-  window.car_top = 110;
+  window.car_top = 118;
 
   var iframe = $('#player1')[0],
   player = $f(iframe),
@@ -122,11 +110,11 @@ $(document).ready(function(){
     
     to_show = window.speed - 1
     
-    if (to_show < 15){
+    if (to_show < 18){
       speed_div.addClass('orange');
     }
 
-    if(to_show <= 5){
+    if(to_show <= 10){
       speed_div.addClass('red').removeClass('orange');
     }
     
