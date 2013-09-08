@@ -1,5 +1,6 @@
 Snap::Application.routes.draw do
-  root :to => 'clips#index'
+  root :to => 'high_voltage/pages#show', id: 'splash'
+
   resources :clips
   match 'clips/:id/share' => 'clips#share'
 

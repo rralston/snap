@@ -50,3 +50,6 @@ end
 gem "geocoder"
 
 gem 'video_info'
+
+gem 'high_voltage'
+gem 'haml-rails'
