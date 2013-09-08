@@ -4,7 +4,10 @@ html, body, #splash {
 }
 
 #splash {
-  background: image-url('splash/splash.png') no-repeat center center fixed;
+  background-image: image-url('splash/splash.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,7 +15,9 @@ html, body, #splash {
   background-size: cover;
 
   #content {
-    background: image-url('splash/content.png') no-repeat 0 0;
+    background-image: image-url('splash/content.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
     margin: 70px auto 0 auto;
     width: 437px;
     height: 389px;

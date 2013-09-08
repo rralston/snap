@@ -1,4 +1,7 @@
 Snap::Application.routes.draw do
+  resources :invitation_requests
+
+
   root :to => 'high_voltage/pages#show', id: 'splash'
 
   resources :clips
