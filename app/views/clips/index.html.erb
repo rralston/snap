@@ -1,30 +1,44 @@
-<h1>Listing clips</h1>
+<%= javascript_include_tag "clips/projects_manifest" %>
+<%= stylesheet_link_tag "clips/manifest.css" %>
 
-<table>
-  <tr>
-    <th>Speed</th>
-    <th>Date string</th>
-    <th>Time</th>
-    <th>Location</th>
-    <th>Video url</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class='container-fluid'>
+  <div class='row-fluid'>
+    <div class='span12'>
+      <h3>My snaps</h3>
+      <% @clips.each do |clip| %>
+        <a href='<%= clip_path(clip) %>'>
+          
+          <div class='row-fluid clip'>
+            <div class='span5 clip_tumbnail'>
+              <img src="<%= clip.video.thumbnail_large %>">
+            </div>
+           
+            <div class='span7 clip_details'>
+              <div class='row-fluid'>
+                <div class='span12 clip_detail date bold'>
+                  <%= time_ago_in_words (Time.parse(clip.date_string)) %> ago
+                </div>
 
-<% @clips.each do |clip| %>
-  <tr>
-    <td><%= clip.speed %></td>
-    <td><%= clip.date_string %></td>
-    <td><%= clip.time %></td>
-    <td><%= clip.location %></td>
-    <td><%= clip.video_url %></td>
-    <td><%= link_to 'Show', clip %></td>
-    <td><%= link_to 'Edit', edit_clip_path(clip) %></td>
-    <td><%= link_to 'Destroy', clip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+                <div class='span12 clip_detail time bold'>
+                  <%= clip.time %>
+                </div>
+                <div class='span12 clip_detail speed_loc'>
+                  <%= clip.speed %> mph &nbsp;&nbsp;<i class='icon-map-marker'></i> <%= clip.location %>
+                </div>
+                <div class='span12 clip_detail'>
+                  <%= link_to 'Show', clip %>
+                  <%= link_to 'Edit', edit_clip_path(clip) %>
+                  <%= link_to 'Destroy', clip, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      <% end %>
+
+    </div>
+  </div>
+</div>
 
 <br />
 

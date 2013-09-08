@@ -28,8 +28,10 @@
     <%= f.text_field :location %>
   </div>
   <div class="field">
-    <%= f.label :video_url %><br />
-    <%= f.text_field :video_url %>
+    <%= f.fields_for :video, @clip.video || Video.new do |video| %>
+      <%= f.label :url, "Video URL" %><br />
+      <%= video.text_field(:url) %>
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>

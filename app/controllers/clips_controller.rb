@@ -80,4 +80,10 @@ class ClipsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def share
+    @clip = Clip.find(params[:id])
+
+  end
 end
