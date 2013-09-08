@@ -94,6 +94,9 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
+  window.speed = 35;
+  window.car_top = 110;
+
   var iframe = $('#player1')[0],
   player = $f(iframe),
   status = $('.status');
@@ -117,7 +120,7 @@ $(document).ready(function(){
     speed_div = $('#car_speed')
     speed_div.html
     
-    to_show = 35 - Math.round(data.seconds)
+    to_show = window.speed - 1
     
     if (to_show < 15){
       speed_div.addClass('orange');
@@ -129,7 +132,9 @@ $(document).ready(function(){
     
     if (parseInt(to_show) >= 0){
       speed_div.html(to_show);
-      $('#car_top').css('top', (80 - Math.round(data.seconds)) + 'px');
+      window.speed = to_show
+      $('#car_top').css('top', (window.car_top - 2) + 'px');
+      window.car_top = window.car_top - 2
     }
     
   }
