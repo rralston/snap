@@ -4,6 +4,7 @@ html, body, #splash {
 }
 
 #splash {
+  color: #f3f3f3;
   background-image: url(/assets/splash/splash.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -16,12 +17,56 @@ html, body, #splash {
 
   #content {
     background-image: url(/assets/splash/content.png);
+    margin: 70px auto 0 auto;
+    padding-top: 23px;
+    width: 520px;
+    height: 390px;
+    position: relative;
+  }
+
+  .brand {
+    font-family: "DINPro Black";
+    background-image: url(/assets/splash/logo.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-    margin: 70px auto 0 auto;
-    width: 437px;
-    height: 389px;
-    position: relative;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin-left: 30px;
+    padding: 19px 0 25px 74px;
+  }
+
+  .motto {
+    margin: 10px 0 0 33px;
+    font-family: 'Raleway Thin';
+    font-size: 3.8em;
+    line-height: 1em;
+  }
+
+  .details {
+    font-family: "DINPro Black";
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 22px 0 0 33px;
+  }
+
+  form {
+    background-color: #FFFFFF;
+    background-image: url(/assets/splash/chevrolet.png);
+    background-repeat: no-repeat;
+    background-position: 95% 57%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 22%;
+
+    p {
+      color: #2D3337;
+      text-transform: uppercase;
+      margin: 4px 0 0 32px;
+      font-family: "DINPro Black";
+    }
   }
 
   button, input#email {
@@ -30,7 +75,7 @@ html, body, #splash {
 
   input#email {
     left: 33px;
-    bottom: 5px;
+    bottom: 13px;
     border: solid #919497 1px;
     border-radius: 0;
     background-color: #e2e2e2;
@@ -39,7 +84,7 @@ html, body, #splash {
   button {
     font-family: "DINPro Black";
     left: 252px;
-    bottom: 15px;
+    bottom: 23px;
     font-size: 1em;
     padding: 5px 10px 5px 10px;
     color: white;
